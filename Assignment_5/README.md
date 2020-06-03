@@ -31,17 +31,17 @@ Test split: 30
 Percentage of feature selected: 60
 Feature selection method: TF-idf
 
-![Confusion matrix](/Assignment_5/images/CF1.png)
+![Confusion matrix](/Assignment_5/images/cf1.png)
 
-![ROC curve 1](/Assignment_4/images/1_1.png)
+![ROC curve 1](/Assignment_5/images/1_1.png)
 
-![ROC curve 1](/Assignment_4/images/1_2.png)
+![ROC curve 1](/Assignment_5/images/1_2.png)
 
-![ROC curve 1](/Assignment_4/images/1_3.png)
+![ROC curve 1](/Assignment_5/images/1_3.png)
 
-![ROC curve 1](/Assignment_4/images/1_4.png)
+![ROC curve 1](/Assignment_5/images/1_4.png)
 
-![ROC curve 1](/Assignment_4/images/1_5.png)
+![ROC curve 1](/Assignment_5/images/1_5.png)
 
 
 
