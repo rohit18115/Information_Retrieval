@@ -43,7 +43,7 @@ Query: I downloaded the whole bunch last week and have been morphing  away the a
 
 
 Question 2: 
-![PR_curve](/images/PR_curve.png)
+![PR_curve](/Assignment_3/images/.png)
 
 
 Question 3: 
