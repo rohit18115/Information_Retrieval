@@ -1,38 +1,38 @@
 READ ME:
 
-# # Basic Text Pre-processing of text data
-# ## Lower casing
-# ## Punctuation removal
-# ## Stopwords removal
-# ## Spelling correction
-# ## Tokenization
-# ## Stemming
-# ## Lemmatization
-# # plan
-# ## do all the preprocessing 
-# ## do tokenization
-# ## find terms from the tokens
-# ## make inverted index
-# ## input query
-# ## preprocess query
-# ## do operations using query and inverted index
+# Basic Text Pre-processing of text data
+* Lower casing
+* Punctuation removal
+* Stopwords removal
+* Spelling correction
+* Tokenization
+* Stemming
+* Lemmatization
+# plan
+* do all the preprocessing 
+* do tokenization
+* find terms from the tokens
+* make inverted index
+* input query
+* preprocess query
+* do operations using query and inverted index
 
 
 
-# # The return_top_k() function gives output for the top k docs based on jaccard coefficient.
-# ## It returns a list of top k docs and the dictionary itself that contains the jc score according to each document.
+### The return_top_k() function gives output for the top k docs based on jaccard coefficient.
+It returns a list of top k docs and the dictionary itself that contains the jc score according to each document.
 
-# # The count_top_k() function gives output for the top k docs based on raw count tf-idf.
-# ## It returns a list of top k docs and the dictionary itself that contains the tf-idf score according to each document.
+### The count_top_k() function gives output for the top k docs based on raw count tf-idf.
+It returns a list of top k docs and the dictionary itself that contains the tf-idf score according to each document.
 
-# # The count_top_k() function gives output for the top k docs based on normalized tf-idf.
-# ## It returns a list of top k docs and the dictionary itself that contains the tf-idf score according to each document.
+### The count_top_k() function gives output for the top k docs based on normalized tf-idf.
+It returns a list of top k docs and the dictionary itself that contains the tf-idf score according to each document.
 
-# # The count_top_k() function gives output for the top k docs based on log_normalized tf-idf.
-# ## It returns a list of top k docs and the dictionary itself that contains the tf-idf score according to each document.
+### The count_top_k() function gives output for the top k docs based on log_normalized tf-idf.
+It returns a list of top k docs and the dictionary itself that contains the tf-idf score according to each document.
 
-# # The edit_distance() function gives output for the Second question 
-# ## It returns a list in which the most similar words in comparision to the wrong words are returned.
+### The edit_distance() function gives output for the Second question 
+It returns a list in which the most similar words in comparision to the wrong words are returned.
 
 
 
@@ -74,16 +74,13 @@ Some Assumptions:
 
 Result for question1:
 Query: zombies
-------------------------------Jaccard Coefficient--------------------------------
-['gloves.txt', 'quarter.c11', 'toilet.s', 'wolfcran.txt', 'foxnstrk.txt']
-------------------------------tf-idf with raw count as term frequency------------------------------
-['zombies.txt', 'keepmodu.txt', 'sick-kid.txt', 'quest', 'social.vikings']
-------------------------------tf-idf with normal term frequency------------------------------------
-['zombies.txt', 'social.vikings', 'socialvikings.txt', 'imonly17.txt', '14.lws']
------------------------tf-idf with normal log normalized term frequency----------------------------
-['zombies.txt', 'keepmodu.txt', 'sick-kid.txt', 'quest', 'social.vikings']
-------------------------------------cosine similarity-----------------------------------------------
-['zombies.txt', 'socialvikings.txt', 'social.vikings', 'keepmodu.txt', 'imonly17.txt']
+Operation | Documents returned
+------------ | -------------
+Jaccard Coefficient | ['gloves.txt', 'quarter.c11', 'toilet.s', 'wolfcran.txt', 'foxnstrk.txt']
+tf-idf with raw count as term frequency | ['zombies.txt', 'keepmodu.txt', 'sick-kid.txt', 'quest', 'social.vikings']
+tf-idf with normal term frequency | ['zombies.txt', 'social.vikings', 'socialvikings.txt', 'imonly17.txt', '14.lws']
+tf-idf with normal log normalized term frequency | ['zombies.txt', 'keepmodu.txt', 'sick-kid.txt', 'quest', 'social.vikings']
+cosine similarity | ['zombies.txt', 'socialvikings.txt', 'social.vikings', 'keepmodu.txt', 'imonly17.txt']
 
 Jaccard coefficient is an incompetent method in comparison to other similarity methods like tf-idf and cosine similarity. As seen above it is highly influenced by the number of words in the document. And if we talk about other variations of tf-idf based methods cosine similarity stands at the top. Infact log normalized tf-idf is some what comparable to it. As both are length normalized. 
 
